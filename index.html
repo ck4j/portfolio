@@ -339,7 +339,31 @@
     <a href="#home" class="back-to-top" id="backToTop">
         <i class="fas fa-arrow-up"></i>
     </a>
+    <!-- Add this right before the footer in index.html -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <h3>Chat with John</h3>
+            <button class="close-btn" id="closeChatbot"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbotMessages">
+            <div class="message bot-message">
+                <div class="message-content">
+                    <p>👋 Hi there! Want to know more about me? Ask a question!</p>
+                </div>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="userMessage" placeholder="Type your question here..." autocomplete="off">
+            <button id="sendMessage"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
 
+    <div class="chatbot-toggle" id="chatbotToggle">
+        <div class="toggle-bubble">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="toggle-text">Want to know more about me? Ask a question!</div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
